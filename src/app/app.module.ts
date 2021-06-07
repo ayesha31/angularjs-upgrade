@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { UpgradeModule } from '@angular/upgrade/static';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,11 +14,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     UpgradeModule
   ],
-  entryComponents: [
-    AppComponent
-  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) { }
